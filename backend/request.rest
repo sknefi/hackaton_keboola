@@ -1,8 +1,14 @@
 ###
 GET http://localhost:3000/user/mock
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZWE5YWUwYWVkZjkzN2ExZjkzODEwMCIsImlhdCI6MTc0MzQyODYyNywiZXhwIjoxNzQzNDMyMjI3fQ.Nonb8VGxalAfjNIJ1W7mbIhttV5h7cPT_Qmlc2hmIf4 
+
+###
+GET http://localhost:3000/user/67ea920fa2db7149d934c9ae
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZWE5YWUwYWVkZjkzN2ExZjkzODEwMCIsImlhdCI6MTc0MzQyODYyNywiZXhwIjoxNzQzNDMyMjI3fQ.Nonb8VGxalAfjNIJ1W7mbIhttV5h7cPT_Qmlc2hmIf4 
 
 ###
 GET http://localhost:3000/user/list
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZWE5Y2Y0ZWViNjM1MzFhNDg3YTQ1MCIsImlhdCI6MTc0MzQyODk0OSwiZXhwIjoxNzQzNDMyNTQ5fQ.CGvM_B5xYl18yWUA6-yjNQi_aS6XqKGAMBYLWeVDUf0 
 
 ###
 GET http://localhost:3000/user/67ea920fa2db7149d934c9b0

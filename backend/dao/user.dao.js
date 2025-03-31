@@ -37,6 +37,7 @@ async function deleteUser(req, res) {
 }
 
 async function listUsers(req, res) {
+	console.log("IAM INSIDE")
 	try {
 		const users = await User.find();
 		res.status(200).json(users);
