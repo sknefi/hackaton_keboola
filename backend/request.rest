@@ -1,0 +1,11 @@
+POST http://localhost:3000/send-email
+Content-Type: application/json
+
+{
+  "subject": "Testovací predmet",
+  "text": "Toto je testovacia správa odoslaná cez REST Client.",
+  "employees": [
+    "filip.karika1@gmail.com",
+    "filipko.karika225@gmail.com"
+  ]
+}
