@@ -1,11 +1,5 @@
-POST http://localhost:3000/send-email
-Content-Type: application/json
+###
+GET http://localhost:3000/user/mock
 
-{
-  "subject": "Testovací predmet",
-  "text": "Toto je testovacia správa odoslaná cez REST Client.",
-  "employees": [
-    "filip.karika1@gmail.com",
-    "filipko.karika225@gmail.com"
-  ]
-}
+###
+GET http://localhost:3000/user/list
