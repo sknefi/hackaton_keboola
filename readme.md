@@ -1,2 +1,0 @@
-TopicTide
-author: Filip K.
