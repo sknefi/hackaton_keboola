@@ -1,20 +1,22 @@
+PORT=3005
+
 ###
-GET http://localhost:3000/user/mock
+GET http://localhost:3005/user/mock
 authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZWE5YWUwYWVkZjkzN2ExZjkzODEwMCIsImlhdCI6MTc0MzQyODYyNywiZXhwIjoxNzQzNDMyMjI3fQ.Nonb8VGxalAfjNIJ1W7mbIhttV5h7cPT_Qmlc2hmIf4 
 
 ###
-GET http://localhost:3000/user/67ea920fa2db7149d934c9ae
+GET http://localhost:3005/user/67ea920fa2db7149d934c9ae
 authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZWE5YWUwYWVkZjkzN2ExZjkzODEwMCIsImlhdCI6MTc0MzQyODYyNywiZXhwIjoxNzQzNDMyMjI3fQ.Nonb8VGxalAfjNIJ1W7mbIhttV5h7cPT_Qmlc2hmIf4 
 
 ###
-GET http://localhost:3000/user/list
+GET http://localhost:3005/user/list
 authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZWE5Y2Y0ZWViNjM1MzFhNDg3YTQ1MCIsImlhdCI6MTc0MzQyODk0OSwiZXhwIjoxNzQzNDMyNTQ5fQ.CGvM_B5xYl18yWUA6-yjNQi_aS6XqKGAMBYLWeVDUf0 
 
 ###
-GET http://localhost:3000/user/67ea920fa2db7149d934c9b0
+GET http://localhost:3005/user/67ea920fa2db7149d934c9b0
 
 ###
-POST http://localhost:3000/auth/login
+POST http://localhost:3005/auth/login
 Content-Type: application/json
 
 {
@@ -23,10 +25,20 @@ Content-Type: application/json
 }
 
 ###
-POST http://localhost:3000/auth/register
+POST http://localhost:3005/auth/register
 Content-Type: application/json
 
 {
 	"email": "ahoj@ahoj.com",
 	"password": "password7123sd89"
+}
+
+###
+POST http://localhost:3005/newsletter/generate
+Content-Type: application/json
+
+{
+	"prompt_topic": "USA elections",
+	"prompt_keywords": "USA elections 2024",
+	"prompt_additional_text": "Why is the USA elections important for the world?"
 }

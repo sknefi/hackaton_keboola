@@ -28,27 +28,29 @@ export function NewsletterGenerator({ onGenerate }: NewsletterGeneratorProps) {
   const { toast } = useToast()
 
   const generateNewsletter = async () => {
-    if (!topic.trim()) {
-      toast({
-        title: "Topic required",
-        description: "Please enter a newsletter topic.",
-        variant: "destructive",
-      })
-      return
+	console.log(topic)
+	console.log(keywords)
+	console.log(additionalText)
+	if (!topic.trim()) {
+		toast({
+			title: "Topic required",
+			description: "Please enter a newsletter topic.",
+			variant: "destructive",
+		})
     }
 
     setIsGenerating(true)
 
     try {
-      const response = await fetch("/api/generate", {
+      const response = await fetch("http://localhost:3005/newsletter/generate", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          topic,
-          keywords,
-          additionalText,
+          prompt_topic: topic,
+          prompt_keywords: keywords,
+          prompt_additional_text: additionalText,
         }),
       })
 
