@@ -3,3 +3,24 @@ GET http://localhost:3000/user/mock
 
 ###
 GET http://localhost:3000/user/list
+
+###
+GET http://localhost:3000/user/67ea920fa2db7149d934c9b0
+
+###
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+	"email": "ahoj@ahoj.com",
+	"password": "password7123sd89"
+}
+
+###
+POST http://localhost:3000/auth/register
+Content-Type: application/json
+
+{
+	"email": "ahoj@ahoj.com",
+	"password": "password7123sd89"
+}

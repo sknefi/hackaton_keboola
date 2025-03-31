@@ -8,8 +8,10 @@ dbConnection();
 
 
 const userController = require('./controllers/user.controller');
+const authController = require('./controllers/auth.controller');
 
 app.use('/user', userController);
+app.use('/auth', authController);
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
